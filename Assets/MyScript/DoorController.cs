@@ -1,16 +1,14 @@
 using UnityEngine;
-
 public class DoorController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject otelKapi;
+    public Canvas canvas1;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        if (canvas1 == null)
+        {
+            otelKapi.SetActive(false);
+        }
     }
 }
